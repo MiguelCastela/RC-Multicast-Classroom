@@ -162,3 +162,8 @@ inspect or run the topology.
 
 A full write-up of the design, protocol, and results is available in
 `docs/RC_relatorio_final.pdf` (in Portuguese).
+
+## Authors
+
+- Miguel Castela
+- Francisco Silva
