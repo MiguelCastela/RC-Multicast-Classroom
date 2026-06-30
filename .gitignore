@@ -1,0 +1,11 @@
+# Build artifacts
+bin/
+*.o
+*.exe
+
+# Test fixtures
+*_testcases.*
+
+# Editor / OS
+*.swp
+.DS_Store
