@@ -34,6 +34,18 @@ The system is made of three programs:
   `username;password;type`, where `type` is `aluno`, `professor`, or
   `administrador`.
 
+### Simulated topology
+
+![GNS3 topology: four subnets joined by three routers](docs/images/network-topology.png)
+
+The GNS3 topology the system was validated on: four subnets (A 193.137.100.0/25 with
+the server, B 193.137.100.128/25, C 193.137.101.0/24, and D 10.5.2.0/26 behind NAT)
+joined by three routers running PIM sparse-dense mode. Multicast routing is the point
+of the exercise: a professor's message has to reach subscribed clients in every
+subnet without the server sending a copy per client. The project files are in
+[`simulation/Projeto/`](simulation/Projeto/) and the router and host configurations
+are listed in [`docs/RC_relatorio_final.pdf`](docs/RC_relatorio_final.pdf).
+
 ## Repository layout
 
 ```
@@ -41,7 +53,8 @@ The system is made of three programs:
 ├── Makefile                  Top-level build file (outputs to bin/)
 ├── README.md
 ├── docs/
-│   └── RC_relatorio_final.pdf Final project report
+│   ├── RC_relatorio_final.pdf Final project report
+│   └── images/               Figures used in this README
 ├── simulation/
 │   └── Projeto/              GNS3 network topology and captured traffic
 └── src/
